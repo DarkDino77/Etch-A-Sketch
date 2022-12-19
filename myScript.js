@@ -1,4 +1,4 @@
-const container = document.querySelector("#container");
+const grid = document.querySelector("#grid");
 //make horizontal box
 /*
 function horizontal(size) {
@@ -24,11 +24,11 @@ horizontal(16);
 */
 
 function makeRows(rows, cols) {
-    container.style.setProperty('--grid-rows', rows);
-    container.style.setProperty('--grid-cols', cols);
+    grid.style.setProperty('--grid-rows', rows);
+    grid.style.setProperty('--grid-cols', cols);
     for (c = 0; c < (rows * cols); c++) {
       let cell = document.createElement("div");
-      container.appendChild(cell).className = "grid-item";
+      grid.appendChild(cell).className = "grid-item";
     };
   };
   
